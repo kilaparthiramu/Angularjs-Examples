@@ -1,0 +1,26 @@
+
+<div cg-busy="myPromise"></div>
+<!--<div cg-busy="{promise:myPromise,message:'Loading',backdrop:true,templateUrl:'busy.html'}"></div>-->
+<!--<div style="text-align: center"><toast style="text-align: center;"></toast></div>-->
+<div class="login-form">
+    <div style="text-align: center">
+        <img src="images/Login/loginlogo.png">
+    </div>
+    <div style="margin-top: 27px">
+        <h1 style="text-align: center">SIGN IN</h1>
+    </div>
+    <form name="loginForm"  ng-submit="login()" style="margin-top: 31px;margin-bottom: 49px;" novalidate>
+        <div>
+            <input type="text" name="username" class="input input-lg form-control" ng-model="username" placeholder="Username">
+        </div>
+        <div style="margin-top: 17px">
+            <input type="password" name="password" class="input input-lg form-control" ng-model="password" placeholder="Password">
+        </div>
+        <div style="margin-top: 17px">
+            <button type="submit" class="input btn form-control" style="color: white;font-size: 16pt;background-color: #00bfe8">SIGN IN</button>
+        </div>
+    </form>
+    <div style="margin-top: 49px;text-align: center">
+        <img src="images/Login/loginlogoname.png">
+    </div>
+</div>

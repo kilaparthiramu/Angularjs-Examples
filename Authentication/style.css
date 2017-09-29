@@ -1,0 +1,25 @@
+
+.login-form {
+    margin: auto;
+    width: 358px;
+    height: auto;
+    border-radius: 10px;
+    background: rgba(10, 28, 54, 0.6);
+    margin-top: 8em;
+    padding-top: 33px;
+    padding-bottom: 31px;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+h1{
+    size: 30pt;
+    color: #ffffff;
+
+}
+.input{
+    width: 296px;
+    height: 46px;
+    border-radius: 5px;
+    font-size: 14pt;
+    color: #999999;
+}

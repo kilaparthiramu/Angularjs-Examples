@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="angular.js"></script>
+<script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body ng-app="myApp">
+<div class="container-fluid">
+    <div class="row" style="height: 80px">
+        <h3>w3schools></h3>
+    </div>
+    <div class="row" style="height: 50px;">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">W3Schools</a>
+                </div>
+                <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a ui-sref="HTML">HTML</a></li>
+                        <li><a ui-sref="CSS">CSS</a></li>
+                        <li><a ui-sref="JAVASCRIPT">JAVASCRIPT</a></li>
+                        <li><a ui-sref="SQL">SQL</a></li>
+                        <li><a ui-sref="PHP">PHP</a></li>
+                        <li><a ui-sref="BOOTSTRAP">BOOTSTRAP</a></li>
+                        <li><a  ui-sref="JQUERY">JQUERY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div data-ui-view=""></div>
+    <div class="row" style="height: auto"></div>
+</div>
+</body>
+</html>

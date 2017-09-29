@@ -1,0 +1,45 @@
+
+<div ng-show="signUpisTrue" class="login-form">
+    <div style="text-align: center">
+        <img src="images/Login/loginlogo.png">
+    </div>
+    <div style="margin-top: 20px">
+        <h1 style="text-align: center">SIGN IN</h1>
+    </div>
+    <form name="loginForm"  ng-submit="login()" style="margin-top: 31px;margin-bottom: 49px;" novalidate>
+        <div>
+            <input type="text" name="username" class="input input-lg form-control" ng-model="user.username" placeholder="Username">
+        </div>;
+        <div style="margin-top: 17px">
+            <input type="password" name="password" class="input input-lg form-control" ng-model="user.password" placeholder="Password">
+        </div>
+        <div style="margin-top: 25px">
+            <button type="submit" class="input btn form-control" style="color: white;font-size: 16pt;background-color: #00bfe8;width: 140px">SIGN IN</button>
+            <button type="submit" class="input btn form-control" ng-click="singUp()" style="color: white;font-size: 16pt;background-color: #00bfe8;width: 140px;float: right">SIGN UP</button>
+        </div>
+    </form>
+</div>
+
+<div ng-hide='signUpisTrue' class="login-form">
+    <div style="margin-top: 27px">
+        <h1 style="text-align: center">SIGN UP</h1>
+    </div>
+    <div name="registerForm"   style="margin-top: 31px;margin-bottom: 49px;" >
+        <div>
+            <input type="text" name="username" class="input input-lg form-control" ng-model="user.username" placeholder="Username">
+        </div>
+        <div style="margin-top: 17px">
+            <input type="password" name="password" class="input input-lg form-control" ng-model="user.password" placeholder="Password">
+        </div>
+        <div style="margin-top: 17px">
+            <input type="email" name="email" class="input input-lg form-control" ng-model="user.email" placeholder="Email">
+        </div>
+        <div style="margin-top: 17px">
+            <input type="number" name="phoneno" class="input input-lg form-control" ng-model="user.phoneno" placeholder="phoneno">
+        </div>
+        <div style="margin-top: 17px">
+            <button type="submit" class="input btn form-control" ng-click="signIn()" style="color: white;font-size: 16pt;background-color: #00bfe8;width: 140px;">SIGN UP</button>
+            <button type="submit" class="input btn form-control" ng-click="cancel()" style="color: white;font-size: 16pt;background-color: #00bfe8;width: 140px;float: right">CANCEL</button>
+        </div>
+    </div>
+</div>

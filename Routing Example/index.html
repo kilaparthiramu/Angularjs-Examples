@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="angular.js"></script>
+        <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            .navbar-default .navbar-nav>li>a {
+                color: blue !important;
+            }
+        </style>
+    </head>
+
+    <body ng-app = "myApp">
+    <div class="maindiv" style="background-image: url(images/brick.jpg)">
+            <div class="conatiner s1" >
+                <div class="row" style="height: 60px;background-color: #ffb3b3;margin: auto">
+                    <a class="navbar-brand logo" href="//www.w3schools.com">W3Schools</a>
+                </div>
+                <div class="row" style="height: 50px;margin: auto;">
+                    <nav class="navbar navbar-default">
+                            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1"  style="background-color: #d0d3db">
+                                <ul class="nav navbar-nav" >
+                                    <li><i class="fa fa-home fa-2x" aria-hidden="true" style="position: relative;top: 11px;"></i></li>
+                                    <li><a ui-sref="html">HTML</a></li>
+                                    <li> <a ui-sref="css">CSS</a></li>
+                                    <li><a ui-sref="bootstrap">BOOTSTRAP</a></li>
+                                </ul>
+                            </div>
+
+                    </nav>
+                </div>
+                <div data-ui-view="" style="margin-left: 15px;"></div>
+                <div class="row" style="height:40px;background-color: #ffb3b3;margin: auto"></div>
+            </div>
+    </div>
+    </body>
+</html>

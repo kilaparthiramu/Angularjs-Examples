@@ -1,0 +1,50 @@
+
+<div cg-busy="myPromise"></div>
+<!--<div cg-busy="{promise:myPromise,message:'Loading',backdrop:true,templateUrl:'busy.html'}"></div>-->
+<!--<div style="text-align: center"><toast style="text-align: center;"></toast></div>-->
+<div ng-show='loginisTrue' class="login-form">
+    <div style="margin-top: 27px">
+        <h1 style="text-align: center">SIGN IN</h1>
+    </div>
+    <div name="loginForm"   style="margin-top: 31px;margin-bottom: 49px;" >
+        <div>
+            <input type="text" name="username" class="input input-lg form-control" ng-model="username" placeholder="Username">
+        </div>
+        <div style="margin-top: 17px">
+            <input type="password" name="password" class="input input-lg form-control" ng-model="password" placeholder="Password">
+        </div>
+        <div style="margin-top: 17px">
+            <button type="submit" class="input btn form-control" ng-click="login()" style="color: white;font-size: 16pt;background-color: #00bfe8;width: 140px;">SIGN IN</button>
+            <button type="submit" class="input btn form-control" ng-click="register()" style="color: white;font-size: 16pt;background-color: #00bfe8;width: 140px;float: right">SIGN UP</button>
+        </div>
+    </div>
+    <div style="margin-top: 49px;text-align: center">
+        <img src="images/Login/loginlogoname.png">
+    </div>
+</div>
+
+<div ng-hide='loginisTrue' class="login-form">
+    <div style="margin-top: 27px">
+        <h1 style="text-align: center">SIGN UP</h1>
+    </div>
+    <div name="registerForm"   style="margin-top: 20px;margin-bottom: 49px;" >
+        <div>
+            <input type="text" name="username" class="input input-lg form-control" ng-model="username" placeholder="Username">
+        </div>
+        <div style="margin-top: 17px">
+            <input type="password" name="password" class="input input-lg form-control" ng-model="password" placeholder="Password">
+        </div>
+        <div style="margin-top: 17px">
+            <input type="email" name="email" class="input input-lg form-control" ng-model="email" placeholder="Email">
+        </div>
+        <div style="margin-top: 17px">
+            <input type="number" name="phoneno" class="input input-lg form-control" ng-model="phoneno" placeholder="phoneno">
+        </div>
+        <div style="margin-top: 17px">
+            <button type="submit" class="input btn form-control" ng-click="registered()" style="color: white;font-size: 16pt;background-color: #00bfe8";>SIGN UP</button>
+        </div>
+    </div>
+    <div style="margin-top: 49px;text-align: center">
+        <img src="images/Login/loginlogoname.png">
+    </div>
+</div>

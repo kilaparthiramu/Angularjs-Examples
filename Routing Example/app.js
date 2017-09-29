@@ -1,0 +1,23 @@
+var app = angular.module('myApp',['ui.router']);
+app.config(function($stateProvider,$urlRouterProvider){
+    $urlRouterProvider.otherwise('/html');
+    $stateProvider.state('html',{
+        url:'/html',
+        templateUrl:'views/main/html.html'
+    }).state('html.htmlBasics',{
+        url:'/htmlBasics',
+        templateUrl:'views/html/htmlBasics.html'
+    }).state('html.htmlTables',{
+        url:'/htmlTables',
+        templateUrl:'views/html/htmlTables.html'
+    }).state('html.htmlImages',{
+        url:'/htmlImages',
+        templateUrl:'views/html/htmlImages.html'
+    }).state('css',{
+        url:'/css',
+        templateUrl:'views/main/css.html'
+    }).state('bootstrap',{
+        url:'/bootstrap',
+        templateUrl:'views/main/bootstrap.html'
+    });
+});

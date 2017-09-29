@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Web App for Simple Interest Calculation</title>
+      <link rel="stylesheet" type="text/css" href="..\css\main.css">
+      <script type="text/javascript" src="..\JS\Interest.js"></script>
+  </head>
+  <body>
+    <h1  id="H1" align="center" >INTEREST CALCULATOR</h1>
+
+    <p id='demo'></p>     
+     <div id="main">
+        <div id="leftside">
+          <table align="center" border="0" id="Itable">
+            <tr><td  id="Textfield">Enter principal: </td><td><input type="text" id="p"></td></tr><br><br><br>
+            <tr><td  id="Textfield">Enter rate(percentage value): </td><td><input type="text" id="r"></td></tr><br><br><br>
+            <tr><td id="Textfield">Enter number of years:</td><td> <input type="text" id="n"></td></tr><br><br><br>
+            <tr>
+               <td align="center"><button id="Interestbutton" onclick="simplecal()">Simple Interest</button></td>
+                              <td><button id="Interestbutton" onclick="compoundcal()">Compund Interest</button></td>
+                              <td><button id="Interestbutton" onclick="clear2()">Clear</button></td>
+                            
+            </tr>
+          </table>
+      </div>
+      <div id="rightside">
+        <table align="rightside"  id="Itable">
+          <tr><td id="Textfield">Simple Interest:</td><td><input type="text" id="siInterest" /></td></tr><br><br><br><br>
+          <tr><td id="Textfield">Compound Interest</td><td><input type="text" id="amount"  /></td></tr><br><br><br><br><br>
+          <tr><td id="Textfield">Interest(compound):</td><td><input type="text" id="interest" /></td></tr>
+          <tr><td><button id="Interestbutton"><a href="mainsheet.html"  id="mainhref">Back</a></button></td></tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
